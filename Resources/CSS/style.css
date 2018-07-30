@@ -1,0 +1,61 @@
+
+html{
+  font-size: 18px;
+}
+
+body{
+  font-family: Helvetica;
+  color: white;
+}
+
+
+/*Header*/
+header{
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0rem;
+  background-color: black;
+}
+
+header img{
+  height: 1.5rem;
+  width: auto;
+  margin-left: 0.5rem;
+}
+
+header span{
+  margin-left: 1rem;
+}
+
+.detail{
+  background-color: black;
+}
+
+#banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: auto;
+  background-image: url("../../Resources/Images/main-banner.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#headline{
+  width: 25rem;
+  height: auto;
+  margin: 9rem 40rem 0rem 0rem;
+
+  font-weight: bold;
+}
+
+#headline h2{
+  padding-top: 0.25rem;
+  font-size: 2rem;
+}
+
+#headline .detail{
+  padding: 2rem 3rem;
+}
