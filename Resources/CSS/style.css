@@ -8,6 +8,12 @@ body{
   color: white;
 }
 
+.image{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 /*****Header*****/
 header{
   display: flex;
@@ -31,6 +37,8 @@ header span{
 /*Main Banner*/
 
 .detail{
+  display: flex;
+  flex-direction: column;
   background-color: black;
 }
 
@@ -41,9 +49,7 @@ header span{
   height: 25rem;
   width: auto;
   background-image: url("../../Resources/Images/main-banner.jpeg");
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .container{
@@ -83,25 +89,56 @@ header span{
 
 /*Products*/
 
-.product{
-  width: 30%;
-  height: 30%;
-  background-repeat: no-repeat;
-  background-size: contain;
+.product .image{
+  width: auto;
+  height: 9rem;
+  margin: 2rem;
 }
 
-.pen.product{
+.pen.image{
   background-image: url("../../Resources/Images/pen.png");
 }
 
-.watch.product{
+.watch.image{
   background-image: url("../../Resources/Images/watch.png");
 }
 
-.glasses.product{
+.glasses.image{
   background-image: url("../../Resources/Images/glasses.png");
+}
+
+.product{
+  width: 30%;
+  border: 4px solid black;
+  border-bottom: none;
+}
+
+.product .detail{
+  padding: 0.5rem 0rem;
+  align-items: center;
+  justify-content: center;
 }
 
 #product-row{
   display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+/*Store info*/
+
+#hours>span, #location>span{
+  color: black;
+}
+
+#store-info{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+#store-info .detail{
+  width: 35%;
+  padding: 1rem 2rem;
 }
