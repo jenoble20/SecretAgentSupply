@@ -8,8 +8,7 @@ body{
   color: white;
 }
 
-
-/*Header*/
+/*****Header*****/
 header{
   display: flex;
   align-items: center;
@@ -27,6 +26,10 @@ header span{
   margin-left: 1rem;
 }
 
+/*****Body*****/
+
+/*Main Banner*/
+
 .detail{
   background-color: black;
 }
@@ -43,11 +46,15 @@ header span{
   background-repeat: no-repeat;
 }
 
+.container{
+  width: 960px;
+  padding-left: 5rem;
+  margin: auto;
+}
+
 #headline{
   width: 25rem;
   height: auto;
-  margin: 9rem 40rem 0rem 0rem;
-
   font-weight: bold;
 }
 
@@ -58,4 +65,43 @@ header span{
 
 #headline .detail{
   padding: 2rem 3rem;
+}
+
+/*Navigation*/
+
+#nav{
+  background-color: firebrick;
+}
+
+#nav ul{
+  display: flex;
+  margin: auto;
+  max-width: 960px;
+  justify-content: space-around;
+  padding: 0.75rem 0rem;
+}
+
+/*Products*/
+
+.product{
+  width: 30%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pen.product{
+  background-image: url("../../Resources/Images/pen.png");
+}
+
+.watch.product{
+  background-image: url("../../Resources/Images/watch.png");
+}
+
+.glasses.product{
+  background-image: url("../../Resources/Images/glasses.png");
+}
+
+#product-row{
+  display: flex;
 }
