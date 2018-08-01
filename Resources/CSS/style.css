@@ -16,6 +16,9 @@ body{
 
 .container{
   width: 960px;
+}
+
+.body.container{
   margin: auto;
 }
 
@@ -93,6 +96,10 @@ header{
   padding: 0.75rem 0rem;
 }
 
+#mobile{
+  display: none;
+}
+
 
 /**Products**/
 
@@ -159,7 +166,104 @@ header{
 
 footer{
   display: flex;
+  align-items: center;
   background-color: black;
   margin-top: 4rem;
   height: 15rem;
+}
+
+
+/**Media Queries**/
+
+@media only screen and (max-width: 1024px){
+
+
+  /**Navigation**/
+
+  .desktop{
+    display: none;
+  }
+
+  #mobile{
+    display: block;
+    text-align: center;
+  }
+
+  #nav ul{
+    justify-content: center;
+  }
+
+
+  /**Main Banner**/
+
+  #headline h2{
+    font-size: 1.75rem;
+  }
+
+  #headline h3{
+    font-size: 0.90rem;
+  }
+
+
+  /**Products section**/
+  .product{
+    width: 47%;
+  }
+
+  .glasses.product{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px){
+
+  .container{
+    max-width: 470px;
+  }
+
+
+  /**Main banner**/
+
+  #banner{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #headline h2{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  #headline h3{
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  #banner .container{
+    width: 100%;
+  }
+
+
+  /**Products Section**/
+
+  .product{
+    width: 90%;
+  }
+
+  .watch.product{
+    display: none;
+  }
+
+
+  /**Store info**/
+
+  #store-info{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #location, #hours{
+    width: 90%;
+  }
+
 }
