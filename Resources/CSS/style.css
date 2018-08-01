@@ -16,31 +16,36 @@ body{
 
 .container{
   width: 960px;
-  padding-left: 5rem;
   margin: auto;
 }
 
-/*****Header*****/
+
+/**Header**/
+
 header{
-  display: flex;
-  align-items: center;
   padding: 0.66rem 0rem;
   background-color: black;
 }
 
-header img{
+#header img{
   height: 1.5rem;
   width: auto;
   margin-left: 0.5rem;
 }
 
-header span{
+#header span{
   margin-left: 1rem;
 }
 
-/*****Body*****/
+#header{
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+}
 
-/*Main Banner*/
+
+/**Main Banner**/
 
 .detail{
   display: flex;
@@ -65,7 +70,7 @@ header span{
 }
 
 #headline h2{
-  padding-top: 0.25rem;
+  margin-top: 0.50rem;
   font-size: 2rem;
 }
 
@@ -73,7 +78,8 @@ header span{
   padding: 2rem 3rem;
 }
 
-/*Navigation*/
+
+/**Navigation**/
 
 #nav{
   background-color: firebrick;
@@ -81,13 +87,14 @@ header span{
 
 #nav ul{
   display: flex;
+  justify-content: space-between;
   margin: auto;
   max-width: 960px;
-  justify-content: space-around;
   padding: 0.75rem 0rem;
 }
 
-/*Products*/
+
+/**Products**/
 
 .product .image{
   width: auto;
@@ -125,11 +132,8 @@ header span{
   margin-top: 3rem;
 }
 
-/*Store info*/
 
-#hours>span, #location>span{
-  color: black;
-}
+/**Store info**/
 
 #store-info{
   display: flex;
@@ -138,16 +142,24 @@ header span{
   margin-top: 3rem;
 }
 
-#store-info .detail{
+#location, #hours{
   width: 35%;
+}
+
+#hours>span, #location>span{
+  color: black;
+}
+
+#store-info .detail{
   padding: 1rem 2rem;
 }
 
-/*****Footer****/
+
+/**Footer**/
 
 footer{
   display: flex;
   background-color: black;
   margin-top: 4rem;
-  height: 5rem;
+  height: 15rem;
 }
