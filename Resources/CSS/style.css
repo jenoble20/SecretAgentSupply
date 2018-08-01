@@ -215,18 +215,25 @@ footer{
   }
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 470px){
 
   .container{
-    max-width: 470px;
+    width: 470px;
   }
 
 
   /**Main banner**/
 
   #banner{
-    display: flex;
     align-items: flex-end;
+  }
+
+  #headline{
+    width: 100%;
+  }
+
+  #headline .detail{
+    width: 100%;
   }
 
   #headline h2{
@@ -239,12 +246,12 @@ footer{
     font-weight: bold;
   }
 
-  #banner .container{
-    width: 100%;
-  }
-
 
   /**Products Section**/
+
+  #product-row{
+    justify-content: center;
+  }
 
   .product{
     width: 90%;
@@ -260,10 +267,22 @@ footer{
   #store-info{
     flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+
+  #hours{
+    margin-top: 0.5rem;
   }
 
   #location, #hours{
     width: 90%;
+  }
+
+  footer{
+    justify-content: center;
+  }
+  footer .container{
+    text-align: center;
   }
 
 }
