@@ -16,16 +16,13 @@ body{
 
 .container{
   width: 960px;
-}
-
-.body.container{
   margin: auto;
 }
-
 
 /**Header**/
 
 header{
+  width: 100%;
   padding: 0.66rem 0rem;
   background-color: black;
 }
@@ -58,7 +55,6 @@ header{
 
 #banner{
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 25rem;
   width: auto;
@@ -177,6 +173,9 @@ footer{
 
 @media only screen and (max-width: 1024px){
 
+  .container{
+    width: 100%;
+  }
 
   /**Navigation**/
 
@@ -218,21 +217,18 @@ footer{
 @media only screen and (max-width: 470px){
 
   .container{
-    width: 470px;
+    width: 100%;
   }
 
 
   /**Main banner**/
 
   #banner{
-    align-items: flex-end;
+    height: 15rem;
   }
 
   #headline{
-    width: 100%;
-  }
-
-  #headline .detail{
+    align-self: flex-end;
     width: 100%;
   }
 
@@ -246,6 +242,13 @@ footer{
     font-weight: bold;
   }
 
+  #detail{
+    margin-top: 10rem;
+  }
+
+  h2, h3{
+    text-align: center;
+  }
 
   /**Products Section**/
 
